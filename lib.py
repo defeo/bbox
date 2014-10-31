@@ -103,7 +103,7 @@ class Cat(BoolFunc):
             return Cat(self._funcs + [func])        
 
     def __str__(self):
-        return ' ++ '.join(map(str, self._seq))
+        return ' ++ '.join(map(str, self._funcs))
         
 
 class Const(BoolFunc):
